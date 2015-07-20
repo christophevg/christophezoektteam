@@ -24,7 +24,7 @@ body {
 a {
   color: #acb7c0;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
 }
 
 img {
@@ -61,25 +61,71 @@ Main components
 -------------------------------- */
 header {
   height: 200px;
-  line-height: 200px;
-  text-align: center;
   background: #303e49;
+  background-image: url("../img/cvg.png");
+  background-size: 160px auto;
+  background-repeat: no-repeat;
+  background-position: 5% 0%;  
 }
+
 header h1 {
   color: white;
   font-size: 18px;
   font-size: 1.125rem;
+  padding-left: 250px;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
+
+header p {
+  color: white;
+  font-size: 16px;
+  padding-left: 250px;
+  line-height: 24px;
+}
+
+/* larger screens */
 @media only screen and (min-width: 1170px) {
   header {
     height: 300px;
-    line-height: 300px;
+    background-size: 240px auto;
   }
   header h1 {
     font-size: 24px;
     font-size: 1.5rem;
+    padding-left: 350px;
+    padding-top: 100px;
+  }
+  header p {
+    font-size: 20px;
+    padding-left: 350px;
+    line-height: 28px;
   }
 }
+
+/* iphone */
+@media only screen and (max-width : 320px) {
+  header {
+    height: 150px;
+    background-size: 110px auto;
+  }
+  header h1 {
+    font-size: 18px;
+    padding-left: 100px;
+    padding-top: 15px;
+  }
+  header p {
+    font-size: 16px;
+    padding-left: 100px;
+    line-height: 18px;
+  }
+}
+
+/* ipad */
+@media only screen and (max-width : 768px){}
+
+/* like samsung grand(480 * 800): */
+@media only screen and (max-width : 480px) {}
 
 #cd-timeline {
   position: relative;
@@ -481,3 +527,57 @@ header h1 {
     transform: translateX(0);
   }
 }
+
+DIV.introduction {
+  text-align: center;
+  margin-top: 45px;
+}
+
+DIV.summary {
+  margin: 52px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 0.25em;
+  box-shadow: 0 3px 0 #d7e4ed;
+}
+
+DIV.introduction H2, DIV.summary H2 {
+  color: #303e49;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+DIV.summary P {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  margin: 1em 0;
+  line-height: 1.6;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+@media only screen and (min-width: 1170px) {
+  DIV.summary {
+    margin: 65px;
+  }
+  
+  DIV.summary P {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 28px;
+  }
+}
+
+/* iphone */
+@media only screen and (max-width : 320px) {
+  DIV.summary {
+    margin: 15px;
+  }
+}
+
+/* ipad */
+@media only screen and (max-width : 768px){}
+
+/* like samsung grand(480 * 800): */
+@media only screen and (max-width : 480px) {}
