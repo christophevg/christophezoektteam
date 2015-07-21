@@ -200,14 +200,29 @@ header p {
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
-  background: #75ce66;
+.cd-timeline-img.step1 {
+  background: rgb(68,	57,	199);	
 }
-.cd-timeline-img.cd-movie {
-  background: #c03b44;
+.cd-timeline-img.step2 {
+  background: rgb(11,	92,	246);	
 }
-.cd-timeline-img.cd-location {
-  background: #f0ca45;
+.cd-timeline-img.step3 {
+  background: rgb(47,	149,	206);	
+}
+.cd-timeline-img.step4 {
+  background: rgb(76,	183,	246);	
+}
+.cd-timeline-img.step5 {
+  background: rgb(85,	210,	77);	
+}
+.cd-timeline-img.step6 {
+  background: rgb(248,	191,	46);	
+}
+.cd-timeline-img.step7 {
+  background: rgb(241,	128,	38);	
+}
+.cd-timeline-img.step8 {
+  background: rgb(233,	38,	34);	
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
