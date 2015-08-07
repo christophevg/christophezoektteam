@@ -193,7 +193,17 @@ header p {
   height: 40px;
   border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 22pt;
+  color: white;
 }
+
+.cd-timeline-img.text {
+  padding-top: 3px;
+}
+
 .cd-timeline-img img {
   display: block;
   width: 24px;
@@ -237,7 +247,13 @@ header p {
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
+    font-size: 28pt;
   }
+  
+  .cd-timeline-img.text {
+    padding-top: 10px;
+  }
+  
   .cssanimations .cd-timeline-img.is-hidden {
     visibility: hidden;
   }
