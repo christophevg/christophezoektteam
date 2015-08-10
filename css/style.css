@@ -129,7 +129,22 @@ header p {
 @media only screen and (max-width : 768px){}
 
 /* like samsung grand(480 * 800): */
-@media only screen and (max-width : 480px) {}
+@media only screen and (max-width : 480px) {
+  header {
+    height: 150px;
+    background-size: 110px auto;
+  }
+  header h1 {
+    font-size: 18px;
+    padding-left: 100px;
+    padding-top: 15px;
+  }
+  header p {
+    font-size: 16px;
+    padding-left: 100px;
+    line-height: 18px;
+  }
+}
 
 #cd-timeline {
   position: relative;
